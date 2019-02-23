@@ -10,7 +10,7 @@ import com.quicktutorials.learnmicroservices.StatisticsMicroservice.entities.Sta
 
 public interface StatisticsDao extends JpaRepository<Statistics, Integer>{
 
-	@Query(value="Select * from latest_statistics where EMAIL=:email ORDER BY DATE DESC LIMIT 10;", nativeQuery = true)
+	@Query(value="SELECT * FROM latest_statistics WHERE EMAIL=:email ORDER BY DATE DESC LIMIT 10;", nativeQuery = true)
 	public List<Statistics> getLastStatistics(@Param("email")String email);
 	
 }

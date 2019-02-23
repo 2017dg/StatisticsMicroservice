@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.quicktutorials.learnmicroservices.StatisticsMicroservice.services.StatisticsService;
 import com.quicktutorials.learnmicroservices.StatisticsMicroservice.utilities.JsonResponseBody;
 
+@org.springframework.web.bind.annotation.RestController
 public class RestController {
 	@Autowired
     StatisticsService statisticsService;
